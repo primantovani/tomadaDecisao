@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const menuHamburger = document.querySelector('.menu-hamburguer');
+    const menu = document.querySelector('.menu');
+
+    menuHamburger.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+});
+
+
 function trocarPagina(pagina) {
 
     document.getElementById("pag1").style.display = "none";
@@ -39,14 +49,6 @@ function verificarNumeros() {
 }
 
 function somaNumeros(){
-
-    // variáveis:
-    let n1;
-    let n2;
-    let n3;
-    let menor;
-    let soma; 
-    
     // Inicialização das variáveis:
     
     menor = 99999999999999999999;
@@ -59,7 +61,6 @@ function somaNumeros(){
     n3 = parseFloat(document.getElementById('n3').value);
     
     // Determinação do menor número:
-    
     if (n1 < menor) {
         menor = n1;
     }
@@ -73,7 +74,6 @@ function somaNumeros(){
     }
     
     // Cálculo da soma dos dois maiores números
-    
     if (n1 !== menor){
         soma += n1;
     }
@@ -95,7 +95,6 @@ function somaNumeros(){
     // Resultado
     resultadoElement.innerHTML = "<p class='menor'>O menor número é: " + menor + "</p>";
     resultadoElement.innerHTML += "<p class='soma'>A soma dos 2 maiores números é: " + soma + "</p>";
-
 } 
 
 // ordenação de números 

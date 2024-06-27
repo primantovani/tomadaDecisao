@@ -8,12 +8,19 @@
 </head>
 <body>
 
-    <ul>
-        <li><a href="#" id="linkPag1" onclick="trocarPagina('pag1')">Verificação de Números</a></li>
-        <li><a href="#" id="linkPag2" onclick="trocarPagina('pag2')">Soma dos Maiores</a></li>
-        <li><a href="#" id="linkPag3" onclick="trocarPagina('pag3')">Sequência de números</a></li>
-        <li><a href="#" id="linkPag4" onclick="trocarPagina('pag4')">Risco seguro</a></li>
-    </ul>
+    <nav>
+        <div class="menu-hamburguer">
+            <span>&#9776;</span>
+        </div>
+            <ul class="menu">
+                <li><a href="#" id="linkPag1" onclick="trocarPagina('pag1')">Verificação de Números</a></li>
+                <li><a href="#" id="linkPag2" onclick="trocarPagina('pag2')">Soma dos Maiores</a></li>
+                <li><a href="#" id="linkPag3" onclick="trocarPagina('pag3')">Sequência de números</a></li>
+                <li><a href="#" id="linkPag4" onclick="trocarPagina('pag4')">Risco seguro</a></li>
+            </ul>
+
+    </nav>
+
 
     <div id = "pag1">
         <h2>Verificação de Números</h2>
@@ -32,7 +39,7 @@
         </form>
 
         <img src="./assets/verificacao_num.png" alt="código função verificarNumeros"></img>
-        
+
     </div>
 
     <div id = "pag2">
@@ -53,18 +60,20 @@
             <div id="resultadoSoma"></div>
         </form>
 
+        <img src="./assets/soma_num.png" alt="código função somaNumeros">
+
     </div>
 
     <div id = "pag3">
         
         <h2>Sequência de números</h2>
 
-        <input type="number" id="nu_1" placeholder="Digite o primeiro número">
-        <input type="number" id="nu_2" placeholder="Digite o segundo número">
-        <input type="number" id="nu_3" placeholder="Digite o terceiro número">
-        <input type="number" id="nu_4" placeholder="Digite o quarto número">
-        <input type="number" id="nu_5" placeholder="Digite o quinto número">
-        <button onclick="sequenciaNumeros()">Ordenar Números</button>
+        <input type="number" id="nu_1" placeholder="1" class="caixa_input">
+        <input type="number" id="nu_2" placeholder="2" class="caixa_input">
+        <input type="number" id="nu_3" placeholder="3" class="caixa_input">
+        <input type="number" id="nu_4" placeholder="4" class="caixa_input">
+        <input type="number" id="nu_5" placeholder="5" class="caixa_input">
+        <button onclick="sequenciaNumeros()">Ordenar</button>
     
         <div id="resultadoSequencia"></div>
 
@@ -75,12 +84,12 @@
         <h2>Risco seguro</h2>
     
         <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade">
+        <input type="number" id="idade" name="idade" class="caixa_input">
     
         <label for="risco">Risco (B/M/A):</label>
-        <input type="text" id="risco" name="risco">
+        <input type="text" id="risco" name="risco" class="caixa_input">
         
-        <button onclick="seguroSaude()">Calcular risco</button>
+        <button onclick="seguroSaude()">Calcular</button>
     
         <div id="resultadoRisco"></div>
     </div>
