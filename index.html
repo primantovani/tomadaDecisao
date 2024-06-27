@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
         <div id="resultadoVerificar"></div>
     </form>
 
-    <h2>Sequência de Números:</h2>
+    <h2>Soma dos maiores:</h2>
 
     <form id="formSoma">
         <label for="n1">Digite o primeiro número:</label>
@@ -32,12 +32,36 @@
         <label for="n3">Digite o terceiro número:</label>
         <input type="text" id="n3"><br>
 
-        <button type="button" onclick="somaNumeros()">Ordenar</button>
+        <button type="button" onclick="somaNumeros()">Somar</button>
     
         <div id="resultadoSoma"></div>
     </form>
 
+    <h2>Sequencia de números</h2>
+
+    <h2>Digite cinco números:</h2>
+    <input type="number" id="nu_1" placeholder="Digite o primeiro número">
+    <input type="number" id="nu_2" placeholder="Digite o segundo número">
+    <input type="number" id="nu_3" placeholder="Digite o terceiro número">
+    <input type="number" id="nu_4" placeholder="Digite o quarto número">
+    <input type="number" id="nu_5" placeholder="Digite o quinto número">
+    <button onclick="sequenciaNumeros()">Ordenar Números</button>
+
+    <div id="resultadoSequencia"></div>
+
+    <h2>Risco seguro</h2>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade">
+
+    <label for="risco">Risco (B/M/A):</label>
+    <input type="text" id="risco" name="risco">
+    
+    <button onclick="seguroSaude()">Calcular risco</button>
+
+    <div id="resultadoRisco"></div>
+
 </body>
 </html>
 
-<script src="./script1.js"></script>
+<script src="./script.js"></script>
