@@ -1,3 +1,13 @@
+function trocarPagina(pagina) {
+
+    document.getElementById("pag1").style.display = "none";
+    document.getElementById("pag2").style.display = "none";
+    document.getElementById("pag3").style.display = "none";
+    document.getElementById("pag4").style.display = "none";
+
+    document.getElementById(pagina).style.display = "block";
+}
+
 function verificarNumeros() {
     // Obter os valores dos camos de entrada
     let number_1 = parseFloat(document.getElementById('numero1').value);
@@ -175,6 +185,8 @@ function seguroSaude() {
     resultadoElement.innerText = categoriaRisco;
 
 }
+
+
 
 
 

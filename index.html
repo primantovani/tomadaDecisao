@@ -4,62 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios | Tomada de decisão 1</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h2>Verificação de Números</h2>
+
+    <ul>
+        <li><a href="#" id="linkPag1" onclick="trocarPagina('pag1')">Verificação de Números</a></li>
+        <li><a href="#" id="linkPag2" onclick="trocarPagina('pag2')">Soma dos Maiores</a></li>
+        <li><a href="#" id="linkPag3" onclick="trocarPagina('pag3')">Sequência de números</a></li>
+        <li><a href="#" id="linkPag4" onclick="trocarPagina('pag4')">Risco seguro</a></li>
+    </ul>
+
+    <div id = "pag1">
+        <h2>Verificação de Números</h2>
+        <h3>Dados dois números, imprima “azul” se ambos forem pares, “laranja” se ambos forem ímpares ou “roxo” nos demais casos.</h3>
+        
+        <form id="formNumeros">
+            <label for="numero1">Digite o primeiro número:</label>
+            <input type="text" id="numero1" name="numero1" required class="caixa_input"><br><br>
     
-    <form id="formNumeros">
-        <label for="numero1">Digite o primeiro número:</label>
-        <input type="text" id="numero1" name="numero1" required><br><br>
-
-        <label for="numero2">Digite o segundo número:</label>
-        <input type="text" id="numero2" name="numero2" required><br><br>
-
-        <button type="button" onclick="verificarNumeros()">Verificar</button>
-
-        <div id="resultadoVerificar"></div>
-    </form>
-
-    <h2>Soma dos maiores:</h2>
-
-    <form id="formSoma">
-        <label for="n1">Digite o primeiro número:</label>
-        <input type="text" id="n1"><br>
-
-        <label for="n2">Digite o segundo número:</label>
-        <input type="text" id="n2"><br>
-
-        <label for="n3">Digite o terceiro número:</label>
-        <input type="text" id="n3"><br>
-
-        <button type="button" onclick="somaNumeros()">Somar</button>
+            <label for="numero2">Digite o segundo número:</label>
+            <input type="text" id="numero2" name="numero2" required class="caixa_input"><br><br>
     
-        <div id="resultadoSoma"></div>
-    </form>
-
-    <h2>Sequencia de números</h2>
-
-    <h2>Digite cinco números:</h2>
-    <input type="number" id="nu_1" placeholder="Digite o primeiro número">
-    <input type="number" id="nu_2" placeholder="Digite o segundo número">
-    <input type="number" id="nu_3" placeholder="Digite o terceiro número">
-    <input type="number" id="nu_4" placeholder="Digite o quarto número">
-    <input type="number" id="nu_5" placeholder="Digite o quinto número">
-    <button onclick="sequenciaNumeros()">Ordenar Números</button>
-
-    <div id="resultadoSequencia"></div>
-
-    <h2>Risco seguro</h2>
-
-    <label for="idade">Idade:</label>
-    <input type="number" id="idade" name="idade">
-
-    <label for="risco">Risco (B/M/A):</label>
-    <input type="text" id="risco" name="risco">
+            <button type="button" onclick="verificarNumeros()">Verificar</button>
     
-    <button onclick="seguroSaude()">Calcular risco</button>
+            <div id="resultadoVerificar"></div>
+        </form>
 
-    <div id="resultadoRisco"></div>
+        <img src="./assets/verificacao_num.png" alt="código função verificarNumeros"></img>
+        
+    </div>
+
+    <div id = "pag2">
+        <h2>Soma dos maiores:</h2>
+        
+        <form id="formSoma">
+            <label for="n1">Digite o primeiro número:</label>
+            <input type="text" id="n1"required class="caixa_input"><br><br>
+    
+            <label for="n2">Digite o segundo número:</label>
+            <input type="text" id="n2"required class="caixa_input"><br><br>
+    
+            <label for="n3">Digite o terceiro número:</label>
+            <input type="text" id="n3"required class="caixa_input"><br><br>
+    
+            <button type="button" onclick="somaNumeros()">Somar</button>
+        
+            <div id="resultadoSoma"></div>
+        </form>
+
+    </div>
+
+    <div id = "pag3">
+        
+        <h2>Sequência de números</h2>
+
+        <input type="number" id="nu_1" placeholder="Digite o primeiro número">
+        <input type="number" id="nu_2" placeholder="Digite o segundo número">
+        <input type="number" id="nu_3" placeholder="Digite o terceiro número">
+        <input type="number" id="nu_4" placeholder="Digite o quarto número">
+        <input type="number" id="nu_5" placeholder="Digite o quinto número">
+        <button onclick="sequenciaNumeros()">Ordenar Números</button>
+    
+        <div id="resultadoSequencia"></div>
+
+    </div>
+
+    <div id = "pag4">
+
+        <h2>Risco seguro</h2>
+    
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+    
+        <label for="risco">Risco (B/M/A):</label>
+        <input type="text" id="risco" name="risco">
+        
+        <button onclick="seguroSaude()">Calcular risco</button>
+    
+        <div id="resultadoRisco"></div>
+    </div>
+
 
 </body>
 </html>
