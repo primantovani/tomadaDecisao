@@ -85,9 +85,6 @@ tr {
     width: 100%;
 }
 
-td {
-
-}
 
 h2 {
     width: 100%;
@@ -174,7 +171,7 @@ button {
         margin-bottom: 16px;
     }
 
-    table{
+    table {
         width: 50%;
     }
     
