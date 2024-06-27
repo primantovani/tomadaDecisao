@@ -72,6 +72,23 @@ body {
     
 }
 
+table{
+    width: 90%;
+    background-color: #7d0b61;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+tr {
+    background-color: #ab7c9d;
+    width: 100%;
+}
+
+td {
+
+}
+
 h2 {
     width: 100%;
 }
@@ -155,6 +172,10 @@ button {
         color: #ffff;
         background-color: rgb(127, 19, 113);
         margin-bottom: 16px;
+    }
+
+    table{
+        width: 50%;
     }
     
 

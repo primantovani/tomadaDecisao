@@ -151,13 +151,13 @@ function seguroSaude() {
      } else if (idade > 20 && idade < 25) {
              switch (risco) {
                  case "B":
-                     categoriaRisco = "Categoria de risco 4";
+                     categoriaRisco = "Categoria de risco 2";
                      break;
                  case "M":
-                     categoriaRisco = "Categoria de risco 5";
+                     categoriaRisco = "Categoria de risco 3";
                      break;
                  case "A":
-                     categoriaRisco = "Categoria de risco 6";
+                     categoriaRisco = "Categoria de risco 4";
                      break;
                 default:
                     categoriaRisco = "Risco desconhecido";
@@ -165,17 +165,46 @@ function seguroSaude() {
      } else if (idade > 24 && idade < 35) {
              switch (risco) {
                  case "B":
-                     categoriaRisco = "Categoria de risco 7";
+                     categoriaRisco = "Categoria de risco 3";
                      break;
                  case "M":
-                     categoriaRisco = "Categoria de risco 8";
+                     categoriaRisco = "Categoria de risco 4";
                      break;
                  case "A":
-                     categoriaRisco = "Categoria de risco 9";
+                     categoriaRisco = "Categoria de risco 5";
                      break;
                 default:
                     categoriaRisco = "Risco desconhecido";
              }
+            } else if (idade > 34 && idade < 65) {
+                switch (risco) {
+                    case "B":
+                        categoriaRisco = "Categoria de risco 4";
+                        break;
+                    case "M":
+                        categoriaRisco = "Categoria de risco 5";
+                        break;
+                    case "A":
+                        categoriaRisco = "Categoria de risco 6";
+                        break;
+                   default:
+                       categoriaRisco = "Risco desconhecido";
+                }
+            } else if (idade > 64 && idade < 71) {
+                switch (risco) {
+                    case "B":
+                        categoriaRisco = "Categoria de risco 7";
+                        break;
+                    case "M":
+                        categoriaRisco = "Categoria de risco 8";
+                        break;
+                    case "A":
+                        categoriaRisco = "Categoria de risco 9";
+                        break;
+                   default:
+                       categoriaRisco = "Risco desconhecido";
+                }
+
      
     }
 
